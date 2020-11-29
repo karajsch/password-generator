@@ -12,6 +12,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// My variables...
 function generatePassword() {
   var charsLowercase = "abcdefghiklmnopqrstuvwxyz";
   var charsUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -37,7 +38,7 @@ function generatePassword() {
       "Do you want lowercase characters? Press 'y' for yes and 'n' for no."
     );
     if (answer === "y" || answer === "Y") {
-      passwordChars = charsLowercase;
+      passwordChars += charsLowercase;
     }
     answer = prompt(
       "Do you want uppercase characters? Press 'y' for yes and 'n' for no."
