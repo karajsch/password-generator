@@ -13,7 +13,7 @@ body,
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Oxygen", sans-serif;
   background-color: #f9fbfd;
 }
 
@@ -74,18 +74,31 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: blue;
+  font-family: "Press Start 2P", cursive;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  box-shadow: 0 9px #ccc;
+  color: white;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  padding: 30px 50px;
   text-align: center;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.btn:active {
+  box-shadow: 0 5px #ccc;
+  transform: translateY(4px);
+}
+
+btn:focus {
+  outline: 0;
 }
 
 button[disabled] {
