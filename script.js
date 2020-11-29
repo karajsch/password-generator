@@ -38,34 +38,34 @@ function generatePassword() {
       "Do you want lowercase characters? Press 'y' for yes and 'n' for no."
     );
     if (answer === "y" || answer === "Y") {
-      passwordChars += charsLowercase;
+      passwordChars += charsLowercase; // This adds lowercase to the final password
     }
     answer = prompt(
       "Do you want uppercase characters? Press 'y' for yes and 'n' for no."
     );
     if (answer === "y" || answer === "Y") {
-      passwordChars += charsUppercase;
+      passwordChars += charsUppercase; // This adds uppercase to the final password
     }
     answer = prompt("Do you want numbers? Press 'y' for yes and 'n' for no.");
     if (answer === "y" || answer === "Y") {
-      passwordChars += charsNumbers;
+      passwordChars += charsNumbers; // This adds numbers to final password
     }
     answer = prompt(
       "Do you want special characters? Press 'y' for yes and 'n' for no."
     );
     if (answer === "y" || answer === "Y") {
-      passwordChars += charsSpecial;
+      passwordChars += charsSpecial; // This adds special characters to final password
     }
   }
 
   if (passwordChars === "") {
     alert("No characters in password");
-    password = "";
+    password = ""; // This sends an alert when the user hasn't specified any characters
   } else {
     var i;
     for (i = 0; i < passwordLength; i++) {
       password += passwordChars.charAt(
-        Math.floor(Math.random() * passwordChars.length)
+        Math.floor(Math.random() * passwordChars.length) //This randomizes the data from the array to create a password that meets the user's criteria
       );
     }
   }
