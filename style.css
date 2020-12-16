@@ -7,15 +7,34 @@
 html,
 body,
 .wrapper {
-  height: 100%;
-  margin: 0;
+  margin: 2%;
   padding: 0;
+  font-family: 'Inconsolata', monospace;
 }
 
 body {
-  font-family: "Oxygen", sans-serif;
-  background-color: #f9fbfd;
+  font-family: 'Inconsolata', monospace;
+  background-color: #94bcc9;
 }
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 60px;
+  color: #008ab8;
+  text-align: center;
+  max-width: 800px;
+  align-self: center;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #00bfff;
+}
+
+h2 {
+  font-size: 20px;
+  color: #008ab8;
+}
+
 
 .wrapper {
   padding-top: 30px;
@@ -23,31 +42,23 @@ body {
   padding-right: 20px;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
-}
-
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #cbe4ec;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: white;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  border: 1px solid #808080;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
-  height: 2px;
 }
 
 .card-body {
@@ -62,8 +73,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+
 }
 
 .card-footer::after {
@@ -74,10 +84,8 @@ header {
 
 .btn {
   border: none;
-  background-color: blue;
-  font-family: "Press Start 2P", cursive;
+  background-color: #00a4db;
   border-radius: 25px;
-  box-shadow: 0 9px #ccc;
   color: white;
   display: inline-block;
   font-size: 22px;
@@ -86,10 +94,12 @@ header {
   padding: 30px 50px;
   text-align: center;
   cursor: pointer;
+  border: 1px solid rgb(102, 102, 102);
 }
 
 .btn:hover {
-  background-color: red;
+  background-color: #00bfff;
+  border: 1px solid rgb(102, 102, 102);
 }
 
 .btn:active {
@@ -125,7 +135,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 1px solid #808080;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
@@ -147,4 +157,9 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+.key {
+  color: #00bfff;
+  text-align: center;
 }
