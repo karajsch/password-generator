@@ -18,24 +18,22 @@ body {
 }
 
 h1 {
-  font-family: 'Pirata One', cursive;
+  font-family: "Pirata One", cursive;
   font-size: 70px;
   font-weight: 500;
   color: #f9dc5c;
   text-align: center;
   width: 100%;
   align-self: center;
-
 }
 
 h2 {
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
-  color: #EFBCD5;
+  color: #efbcd5;
   padding: 40px;
 }
-
 
 .wrapper {
   padding-top: 30px;
@@ -73,7 +71,6 @@ h2 {
   content: " ";
   display: block;
   width: 100%;
-
 }
 
 .card-footer::after {
@@ -83,11 +80,11 @@ h2 {
 }
 
 .btn {
-  font-family: 'Pirata One', cursive;
+  font-family: "Pirata One", cursive;
   border: none;
-  background-color: #3185FC;
+  background-color: #3185fc;
   border-radius: 25px;
-  color: #EFBCD5;
+  color: #efbcd5;
   display: inline-block;
   font-size: 40px;
   line-height: 22px;
@@ -100,7 +97,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #E84855;
+  background-color: #e84855;
 }
 
 .btn:active {
@@ -161,7 +158,6 @@ button[disabled] {
 }
 
 .key {
-  color: #3185FC;
+  color: #3185fc;
   text-align: center;
-
 }
